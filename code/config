@@ -1,0 +1,16 @@
+name                          : Empty project
+
+// key1 (object)                      : {name: 'Peter'}
+// key2 (JSON)                        : {"name":"Peter"}
+// number, boolean, date, array
+// key4 (array)                       : [1,2,3]
+
+// key7                               : base64 MTisdhd
+// key8                               : hex ffffff
+
+// envvar (env)                       : USER
+// rand    (random)                   : 10
+// rand (generate)                    : 10 /databadses/config.json
+
+// Total.js API services:
+// totalapi                      : YOUR TOKEN
