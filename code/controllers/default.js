@@ -1,5 +1,5 @@
 exports.install = function() {
-	ROUTE('+GET /', index_view);
+	ROUTE('+GET /', index_view, ['#test']);
 };
 
 function index_view() {

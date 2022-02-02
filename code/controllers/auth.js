@@ -12,10 +12,10 @@ function login() {
         .where('password', data.password)
         .callback(function(err, res) {
             if (res) {
-                AUDIT(self, `Successfully logged ${res.login}`)
+                AUDIT(self, `Successfully logged in ${res.login}`)
                 return FUNC.authcookie(self, res.id);
             } else {
-                AUDIT(self, `Unsuccessfully logged ${data.login}`)
+                AUDIT(self, `Unsuccessful attempt to log in ${data.login}`)
                 return self.throw401()
             }
         })
@@ -28,6 +28,7 @@ function login() {
 function logout() {
     var self = this;
     if (self.user) {
+        AUDIT(self, `Successfully logged out ${self.user.login}`)
         MAIN.session.remove2(self.user.id, self.done());
     }
     self.success();

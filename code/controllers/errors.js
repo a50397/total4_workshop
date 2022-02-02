@@ -3,5 +3,5 @@ exports.install = function() {
 }
 
 function forouone() {
-    this.plain('HERE WE ARE')
+    this.plain('ERROR 404')
 }

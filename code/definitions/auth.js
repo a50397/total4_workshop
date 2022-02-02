@@ -3,7 +3,6 @@ AUTH(function($) {
         if (!user) {
             return $.invalid();
         }
-        $.success(user);
-        return;
+        return $.success(user);
     })
 })
