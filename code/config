@@ -1,5 +1,9 @@
 name                          : Empty project
 
+cookie                        : __sc
+cookie_key (generate)         : 10
+cookie_expire                 : 1 day 
+
 // key1 (object)                      : {name: 'Peter'}
 // key2 (JSON)                        : {"name":"Peter"}
 // number, boolean, date, array
